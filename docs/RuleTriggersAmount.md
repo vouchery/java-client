@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | Number of triggers, triggering the subcampaign, should match specific condition. | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **operator** | [**OperatorEnum**](#OperatorEnum) | What kind of check should system do, comparing number of triggers and rule value property. | 
 **value** | [**BigDecimal**](BigDecimal.md) | Value to compare loyalty points with. | 
 **groupBy** | [**GroupByEnum**](#GroupByEnum) | How exactly should total amount of triggers be calculated. For each customer, subcampaign or other. | 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-TRIGGERS_AMOUNT | &quot;triggers_amount&quot;
+TRIGGERSAMOUNT | &quot;TriggersAmount&quot;
 
 
 

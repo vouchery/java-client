@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | What categories should customer belong/not belong to pass the rule. | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **category** | **String** | Name of category, rule will be related to. |  [optional]
 **matchingType** | [**MatchingTypeEnum**](#MatchingTypeEnum) | any_of means that customer should have tags in mentioned category. none_of - customer shouldn&#39;t have tags. | 
 **tags** | **List&lt;String&gt;** |  | 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-CUSTOMER_CATEGORY | &quot;customer_category&quot;
+CUSTOMERCATEGORY | &quot;CustomerCategory&quot;
 
 
 

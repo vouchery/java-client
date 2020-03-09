@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | This reward generates product item and return it in trigger response. | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **name** | **String** |  | 
 **sku** | **String** |  | 
 **productIdentifier** | **String** |  |  [optional]
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-GENERATE_PRODUCT_ITEM | &quot;generate_product_item&quot;
+GENERATEPRODUCTITEM | &quot;GenerateProductItem&quot;
 
 
 

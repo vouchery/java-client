@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | This reward assigns existing voucher from specific subcampaign to the customer, who generated the trigger. |  [optional]
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **voucherCampaignId** | [**BigDecimal**](BigDecimal.md) | Subcampaign ID, voucher is related to. | 
 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-ASSIGN_VOUCHER | &quot;assign_voucher&quot;
+ASSIGNVOUCHER | &quot;AssignVoucher&quot;
 
 
 

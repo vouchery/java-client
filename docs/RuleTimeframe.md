@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | Defines start &amp; end date when campaign will be valid and each voucher lifetime from the time of it&#39;s creation | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **startTime** | **String** | Date and time in future | 
 **endTime** | **String** | Date and time in future | 
 **voucherLifetime** | **Integer** | Number of seconds, each voucher will be valid from the time of it&#39;s creation | 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-TIMEFRAME | &quot;timeframe&quot;
+TIMEFRAME | &quot;Timeframe&quot;
 
 
 

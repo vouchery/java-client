@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **role** | [**RoleEnum**](#RoleEnum) |  | 
 **accessScope** | [**AccessScopeEnum**](#AccessScopeEnum) |  | 
 **active** | **Boolean** |  |  [optional] [readonly]
+**maskedApiKey** | **String** |  |  [optional] [readonly]
+**lastSignInAt** | [**OffsetDateTime**](OffsetDateTime.md) |  |  [optional] [readonly]
 **createdAt** | [**OffsetDateTime**](OffsetDateTime.md) |  |  [optional] [readonly]
 **updatedAt** | [**OffsetDateTime**](OffsetDateTime.md) |  |  [optional] [readonly]
 

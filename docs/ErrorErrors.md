@@ -40,7 +40,6 @@ INCLUDES_FORBIDDEN_TAGS | &quot;includes_forbidden_tags&quot;
 MISSING_REQUIRED_CATEGORY | &quot;missing_required_category&quot;
 OUTSIDE_OF_PERMITTED_AREAS | &quot;outside_of_permitted_areas&quot;
 NOT_VALID_AT_THIS_TIME | &quot;not_valid_at_this_time&quot;
-NOT_ACTIVE | &quot;not_active&quot;
 MAXIMUM_REDEMPTIONS_EXCEEDED | &quot;maximum_redemptions_exceeded&quot;
 BUDGET_EXCEEDED | &quot;budget_exceeded&quot;
 NEW_CUSTOMER_REQUIRED | &quot;new_customer_required&quot;
@@ -48,11 +47,12 @@ PER_CUSTOMER_LIMIT_EXCEEDED | &quot;per_customer_limit_exceeded&quot;
 TIME_LIMIT_EXPIRED | &quot;time_limit_expired&quot;
 REDEMPTIONS_LIMIT_EXCEEDED | &quot;redemptions_limit_exceeded&quot;
 BELOW_CAMPAIGN_MINIMUM | &quot;below_campaign_minimum&quot;
-ABOVE_CAMPAIGN_MAXIMUM | &quot;above_campaign_maximum&quot;
 UNKNOWN_TAGS | &quot;unknown_tags&quot;
 DOES_NOT_MATCH_ASSIGNED_CUSTOMER | &quot;does_not_match_assigned_customer&quot;
+NOT_ACTIVE | &quot;not_active&quot;
 UNIQUE_CODE_ALREADY_USED | &quot;unique_code_already_used&quot;
 NOT_MATCH | &quot;not_match&quot;
+CAN_NOT_EXPIRE_REDEEMED | &quot;can_not_expire_redeemed&quot;
 
 
 

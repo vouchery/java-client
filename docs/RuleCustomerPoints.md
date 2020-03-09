@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-CUSTOMER_POINTS | &quot;customer_points&quot;
+CUSTOMERPOINTS | &quot;CustomerPoints&quot;
 
 
 

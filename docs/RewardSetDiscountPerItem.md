@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | Set discount for specific item in trigger data. Returns false if item is not found. | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **discountValue** | [**BigDecimal**](BigDecimal.md) |  | 
 **itemConditions** | [**List&lt;RuleProductItemExistsItemConditions&gt;**](RuleProductItemExistsItemConditions.md) | Array of item conditions, that item should fit | 
 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-SET_DISCOUNT_PER_ITEM | &quot;set_discount_per_item&quot;
+SETDISCOUNTPERITEM | &quot;SetDiscountPerItem&quot;
 
 
 

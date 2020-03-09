@@ -9,6 +9,8 @@ Method | HTTP request | Description
 [**findSubCampaigns**](CampaignsApi.md#findSubCampaigns) | **GET** /campaigns/sub | Get sub campaigns by params
 [**getCampaign**](CampaignsApi.md#getCampaign) | **GET** /campaigns/{id} | Get a campaign
 [**getCampaigns**](CampaignsApi.md#getCampaigns) | **GET** /campaigns | Get main campaigns with children by params
+[**getMainCampaign**](CampaignsApi.md#getMainCampaign) | **GET** /main_campaigns/{id} | Get a main campaign
+[**getMainCampaigns**](CampaignsApi.md#getMainCampaigns) | **GET** /main_campaigns | Get main campaigns with children by params
 [**updateCampaign**](CampaignsApi.md#updateCampaign) | **PATCH** /campaigns/{id} | Update a campaign
 
 
@@ -33,10 +35,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     Campaign campaign = new Campaign(); // Campaign | 
@@ -66,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -99,10 +100,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     Integer id = 56; // Integer | Campaign ID
@@ -131,7 +131,7 @@ null (empty response body)
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -164,10 +164,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     String nameCont = "nameCont_example"; // String | Name contains
@@ -205,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -238,10 +237,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     Integer id = 56; // Integer | Campaign ID
@@ -271,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -304,10 +302,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     String nameCont = "nameCont_example"; // String | Name contains
@@ -343,7 +340,143 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Collection of campaigns |  * Link - Provides urls for traversing paginated responses. See docs.vouchery.io for details. <br>  |
+
+<a name="getMainCampaign"></a>
+# **getMainCampaign**
+> MainCampaign getMainCampaign(id)
+
+Get a main campaign
+
+### Example
+```java
+// Import classes:
+import io.vouchery.sdk.ApiClient;
+import io.vouchery.sdk.ApiException;
+import io.vouchery.sdk.Configuration;
+import io.vouchery.sdk.auth.*;
+import io.vouchery.sdk.models.*;
+import io.vouchery.sdk.CampaignsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
+    
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
+
+    CampaignsApi apiInstance = new CampaignsApi(defaultClient);
+    Integer id = 56; // Integer | Campaign ID
+    try {
+      MainCampaign result = apiInstance.getMainCampaign(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling CampaignsApi#getMainCampaign");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**| Campaign ID |
+
+### Return type
+
+[**MainCampaign**](MainCampaign.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | A campaign |  -  |
+
+<a name="getMainCampaigns"></a>
+# **getMainCampaigns**
+> List&lt;MainCampaign&gt; getMainCampaigns(nameCont, teamEq, statusEq, templateEq)
+
+Get main campaigns with children by params
+
+### Example
+```java
+// Import classes:
+import io.vouchery.sdk.ApiClient;
+import io.vouchery.sdk.ApiException;
+import io.vouchery.sdk.Configuration;
+import io.vouchery.sdk.auth.*;
+import io.vouchery.sdk.models.*;
+import io.vouchery.sdk.CampaignsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
+    
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
+
+    CampaignsApi apiInstance = new CampaignsApi(defaultClient);
+    String nameCont = "nameCont_example"; // String | Name contains
+    String teamEq = "teamEq_example"; // String | Team
+    String statusEq = "statusEq_example"; // String | Status
+    String templateEq = "templateEq_example"; // String | Template (promotion type) of main campaign
+    try {
+      List<MainCampaign> result = apiInstance.getMainCampaigns(nameCont, teamEq, statusEq, templateEq);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling CampaignsApi#getMainCampaigns");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **nameCont** | **String**| Name contains | [optional]
+ **teamEq** | **String**| Team | [optional]
+ **statusEq** | **String**| Status | [optional]
+ **templateEq** | **String**| Template (promotion type) of main campaign | [optional]
+
+### Return type
+
+[**List&lt;MainCampaign&gt;**](MainCampaign.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -376,10 +509,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     CampaignsApi apiInstance = new CampaignsApi(defaultClient);
     Integer id = 56; // Integer | Campaign ID
@@ -411,7 +543,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 

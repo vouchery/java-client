@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="createReward"></a>
 # **createReward**
-> Reward createReward(campaignId, UNKNOWN_BASE_TYPE)
+> Reward createReward(campaignId, reward)
 
 Create a reward
 
@@ -32,16 +32,15 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     RewardsApi apiInstance = new RewardsApi(defaultClient);
     Integer campaignId = 56; // Integer | Campaign ID
-    UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = new UNKNOWN_BASE_TYPE(); // UNKNOWN_BASE_TYPE | 
+    Reward reward = new Reward(); // Reward | 
     try {
-      Reward result = apiInstance.createReward(campaignId, UNKNOWN_BASE_TYPE);
+      Reward result = apiInstance.createReward(campaignId, reward);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RewardsApi#createReward");
@@ -59,7 +58,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **campaignId** | **Integer**| Campaign ID |
- **UNKNOWN_BASE_TYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md)|  | [optional]
+ **reward** | [**Reward**](Reward.md)|  | [optional]
 
 ### Return type
 
@@ -67,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -100,10 +99,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     RewardsApi apiInstance = new RewardsApi(defaultClient);
     Integer id = 56; // Integer | Reward ID
@@ -132,7 +130,7 @@ null (empty response body)
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -165,10 +163,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     RewardsApi apiInstance = new RewardsApi(defaultClient);
     Integer id = 56; // Integer | Reward ID
@@ -198,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -231,10 +228,9 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     RewardsApi apiInstance = new RewardsApi(defaultClient);
     Integer campaignId = 56; // Integer | Campaign ID
@@ -264,7 +260,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 
@@ -278,7 +274,7 @@ Name | Type | Description  | Notes
 
 <a name="updateReward"></a>
 # **updateReward**
-> Reward updateReward(id, UNKNOWN_BASE_TYPE)
+> Reward updateReward(id, reward)
 
 Update a reward
 
@@ -297,16 +293,15 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://preview.vouchery.io/api/v2.0");
     
-    // Configure HTTP basic authorization: Basic
-    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
-    Basic.setUsername("YOUR USERNAME");
-    Basic.setPassword("YOUR PASSWORD");
+    // Configure HTTP bearer authorization: Bearer
+    HttpBearerAuth Bearer = (HttpBearerAuth) defaultClient.getAuthentication("Bearer");
+    Bearer.setBearerToken("BEARER TOKEN");
 
     RewardsApi apiInstance = new RewardsApi(defaultClient);
     Integer id = 56; // Integer | Reward ID
-    UNKNOWN_BASE_TYPE UNKNOWN_BASE_TYPE = new UNKNOWN_BASE_TYPE(); // UNKNOWN_BASE_TYPE | 
+    Reward reward = new Reward(); // Reward | 
     try {
-      Reward result = apiInstance.updateReward(id, UNKNOWN_BASE_TYPE);
+      Reward result = apiInstance.updateReward(id, reward);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling RewardsApi#updateReward");
@@ -324,7 +319,7 @@ public class Example {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**| Reward ID |
- **UNKNOWN_BASE_TYPE** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md)|  | [optional]
+ **reward** | [**Reward**](Reward.md)|  | [optional]
 
 ### Return type
 
@@ -332,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Basic](../README.md#Basic)
+[Bearer](../README.md#Bearer)
 
 ### HTTP request headers
 

@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | This reward adds specific number of loyalty points to customer, who is triggering the subcampaign. | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **title** | **String** |  |  [optional]
 **description** | **String** |  |  [optional]
 **value** | [**BigDecimal**](BigDecimal.md) | Number of loyalty points to add. | 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-ADD_POINTS | &quot;add_points&quot;
+ADDPOINTS | &quot;AddPoints&quot;
 
 
 

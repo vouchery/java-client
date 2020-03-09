@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Integer** |  |  [optional] [readonly]
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **campaignId** | **Integer** |  |  [optional] [readonly]
 **active** | **Boolean** |  |  [readonly]
 **status** | [**StatusEnum**](#StatusEnum) |  |  [optional]
@@ -14,6 +14,14 @@ Name | Type | Description | Notes
 **customerIdentifier** | **String** | A string uniquely identifying customer in your system. Please check customers API. |  [optional]
 **createdAt** | [**OffsetDateTime**](OffsetDateTime.md) |  |  [optional] [readonly]
 **updatedAt** | [**OffsetDateTime**](OffsetDateTime.md) |  |  [optional] [readonly]
+
+
+
+## Enum: TypeEnum
+
+Name | Value
+---- | -----
+VOUCHER | &quot;Voucher&quot;
 
 
 

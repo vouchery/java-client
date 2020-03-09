@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | [**TypeEnum**](#TypeEnum) | Check if trigger has specific product item related | 
+**type** | [**TypeEnum**](#TypeEnum) |  | 
 **itemConditions** | [**List&lt;RuleProductItemExistsItemConditions&gt;**](RuleProductItemExistsItemConditions.md) | Array of item conditions, that item should fit | 
 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 Name | Value
 ---- | -----
-PRODUCT_ITEM_EXISTS | &quot;product_item_exists&quot;
+PRODUCTITEMEXISTS | &quot;ProductItemExists&quot;
 
 
 

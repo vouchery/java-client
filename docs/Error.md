@@ -22,6 +22,8 @@ NOT_FOUND | &quot;not_found&quot;
 NOT_AUTHORIZED | &quot;not_authorized&quot;
 FORBIDDEN | &quot;forbidden&quot;
 CAN_NOT_BE_DELETED | &quot;can_not_be_deleted&quot;
+UNKNOWN_ATTRIBUTE | &quot;unknown_attribute&quot;
+INVALID_TYPE | &quot;invalid_type&quot;
 UNKNOWN_ERROR | &quot;unknown_error&quot;
 
 
